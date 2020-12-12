@@ -1,6 +1,7 @@
 {
   "name": "to-do-list",
   "version": "1.0.0",
+  "homepage": "https://KarinaDavi.github.io/Lista",
   "description": "ES6 Spread Operator Practice",
   "keywords": [],
   "main": "src/index.js",
@@ -10,13 +11,16 @@
     "react-scripts": "3.2.0"
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "typescript": "3.3.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     ">0.2%",
